@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Restaurant Tipping App</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    
+    <body>
+        <h1> Restaurant Tipping App </h1>
+        
+        <h2>Your bill's subtotal was...</h2>
+        <p> $<%= @subtotal %> </p>
+        
+        <h2>Your tip amount at <%= @percentage %>% is...</h2>
+        <p> $<%= @tip %> </p>
+        
+        <h2>The total bill amount including the tip is...</h2>
+        <p> $<%= @final %> </p>
+        
+        <h2>If each of you paid the same amount for the bill, each person owes...</h2>
+        <p> $<%= @indiv %> for each person (<%= @party %> people in your party)</p>
+        
+    </body>
+</html>
